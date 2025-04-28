@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Forms Exercise
+    </title>
+
+    <!-- Styling Forms -->
+    <style>
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            margin: 5px;
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <hr>
+    <br>
+
+    <!-- Basic Form Structure  -->
+     <h2>Basic Form Structure</h2>
+    <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <hr>
+
+
+    <!-- Input Fields – Text, Password, and Email -->
+    <h2>Input Fields – Text, Password, and Email</h2>
+    <br>
+
+    <!--  Text Field -->
+      
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <!-- Password Field -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+
+    <!-- Email Field -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+
+    <br>
+    <br>
+    <hr>
+
+
+
+    <!-- Checkbox and Radio Buttons -->
+
+    <br>
+    <br>
+
+    <!-- Checkbox -->
+
+    <label for="subscribe">Subscribe to newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe">
+
+    <!-- Radio Buttons -->
+
+    <label>Choose your favorite color:</label>
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red">Red</label>
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue">Blue</label>
+
+    <br>
+    <br>
+    <hr>
+
+    <!-- Select Dropdown -->
+    <br>
+    
+    <label for="city">Select your city:</label>
+    <select id="city" name="city">
+        <option value="nyc">New York</option>
+        <option value="la">Los Angeles</option>
+        <option value="sf">San Francisco</option>
+    </select>
+
+    <br>
+    <br>
+    <hr>
+
+
+
+    <!-- Textarea (Multi-line Text Input) -->
+     <br>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+    <br>
+    <br>
+    <hr>
+
+    <!-- File Upload -->
+     <br>
+    <label for="file">Upload your resume:</label>
+    <input type="file" id="file" name="resume">
+
+    <br>
+    <br>
+    <hr>
+
+    <!-- Button Types (Submit, Reset, and Custom) -->
+
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+
+    <!-- Reset Button -->
+    <button type="reset">Reset</button>
+
+    <!-- Custom Button (Normal Button) -->
+    <button type="button" onclick="alert('Hello!')">Click Me</button>
+
+    <br>
+    <br>
+    <hr>
+
+    <!-- Grouping Form Elements (Fieldset & Legend) -->
+     <br>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name">
+    </fieldset>
+
+    <br>
+    <br>
+    <hr>
+
+    <!-- Form Validation (Required, Pattern, Min/Max) -->
+
+    <br>
+
+    <!-- Required Field -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <!-- Pattern (Regex) Validation -->
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" pattern="\d{3}[-]\d{3}[-]\d{4}" required>
+
+    <!-- Minimum and Maximum Value -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100" required>
+    
+    <br>
+    <br>
+    <hr>
+
+
+    <!-- Form Action and Method -->
+    <br>
+    <form action="submit_form.php" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <hr>
+
+    <!-- Multiple Forms on One Page -->
+    <br>
+    <form action="login.php" method="POST">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="email" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <form action="register.php" method="POST">
+        <label for="register-email">Email:</label>
+        <input type="email" id="register-email" name="email" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <br>
+    <hr>
+
+    <!-- Hidden Input Fields -->
+    <input type="hidden" name="user_id" value="12345">
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
