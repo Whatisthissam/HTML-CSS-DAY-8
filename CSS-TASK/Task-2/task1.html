@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Task1
+    </title>
+
+
+
+    <style>
+        section {
+            padding: 5px;
+            margin: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            border-color: #d66c0fe1;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background-color: #d66c0fe1;
+        }
+
+        .image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .info {
+            flex-grow: 1;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .navbar li {
+            margin: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Responsive design for small screens */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background-color: #d66c0fe1;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: rgb(255, 140, 0);
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="https://avatars.githubusercontent.com/u/185706723?v=4" alt="Profile Image">
+        </div>
+        <div class="info">
+            <h2>Sameer Rathod</h2>
+            <p>I’m a passionate and creative individual with a strong interest in web development 💻. I love building
+                websites and exploring new technologies that bring ideas to life online 🌐. Along with coding,
+                photography 📸 is one of my biggest passions — capturing the beauty of the world through my lens.
+                Currently, I’m pursuing my B.Tech in Computer Science and Engineering at ITM Skills University 🎓. Every
+                day, I’m working hard to sharpen my skills and move closer to my dream of becoming a top professional in
+                the tech industry 🚀</p>
+        </div>
+    </div>
+
+    <section class="section">
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="container">
+        <div class="sidebar left">Left Sidebar</div>
+        <div class="main-content">Main Content</div>
+        <div class="sidebar right">Right Sidebar</div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
