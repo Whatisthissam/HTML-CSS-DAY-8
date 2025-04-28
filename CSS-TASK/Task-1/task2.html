@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Style Password and Confirm Password Fields
+
+    </title>
+    <style>
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="password"]:focus {
+            border-color: #4CAF50;
+        }
+
+        input[type="password"]::placeholder {
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit-form" method="POST">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"
+            required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

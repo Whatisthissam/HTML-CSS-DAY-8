@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Style Select Dropdown
+
+    </title>
+    <style>
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+
+        select:hover {
+            border-color: #4CAF50;
+        }
+
+        option {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit-form" method="POST">
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

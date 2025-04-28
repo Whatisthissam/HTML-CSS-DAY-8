@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Style a Textarea
+
+    </title>
+    <style>
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        textarea:focus {
+            border-color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit-form" method="POST">
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+</body>
+
+</html>

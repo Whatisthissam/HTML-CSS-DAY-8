@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Style Form Validation States
+
+    </title>
+    <style>
+        input:valid {
+            border-color: green;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+
+        input:invalid:focus {
+            box-shadow: 0 0 5px red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
